@@ -4,17 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to deploy to'
+        description: 'Select environment'
         required: true
-        default: 'development'
         options:
           - development
           - staging
           - production
       resource:
-        description: 'Resource to target'
+        description: 'Select resource'
         required: true
-        default: 'app'
         options:
           - app
           - database
