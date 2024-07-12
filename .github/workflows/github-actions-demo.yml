@@ -6,7 +6,7 @@ on:
       environment:
         description: 'Select environment'
         required: true
-        type: bool
+        type: choice
         options:
           - development
           - staging
