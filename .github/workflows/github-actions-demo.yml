@@ -1,6 +1,13 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'terraform/**'
+      - 'jsfnhsdjfdsjf/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: uday-kumar-runner
