@@ -6,6 +6,7 @@ on:
       environment:
         description: 'Select environment'
         required: true
+        type: choice
         options:
           - development
           - staging
@@ -13,6 +14,7 @@ on:
       resource:
         description: 'Select resource'
         required: true
+        type: choice
         options:
           - app
           - database
